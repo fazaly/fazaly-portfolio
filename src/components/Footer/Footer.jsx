@@ -11,7 +11,7 @@ const Footer = () => {
                     <img className="footer-img" src={logo1} alt='' />
                     <h4>Fazaly</h4>
                 </div>
-                <p>© 2022. All rights reserved by Fazaly Rabbi.</p>
+                <p>Copyright © 2022 - All right reserved by Fazaly Rabbi.</p>
                 </div>
             </footer>
         </>

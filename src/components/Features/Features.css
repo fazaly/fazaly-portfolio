@@ -1,24 +1,29 @@
 .features .box {
-    padding: 50px;
+    text-align: center;
 }
-.features .box h2 {
+/* .features .box h2 {
     margin: 20px 0 20px 0;
-}
-.features .box p {
+} */
+/* .features .box p {
     word-spacing: 2px;
     transition: 0.5s;
-}
+} */
 
 .features .box i {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 20px;
     transition: 0.5s;
     opacity: 0;
 }
-.features .box:hover p {
+/* .features .box:hover p {
     color: white;
-}
+} */
 .features .box:hover i {
     color: white;
     opacity: 1;
+}
+.reusable img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
 }

@@ -1,37 +1,26 @@
-import React, { useState } from "react"
+import React, { useRef } from "react"
 import contact1 from "./contact1.png"
-import "./Contact.css"
+import "./Contact.css";
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
-    const [data, setData] = useState({
-        fullname: "",
-        phone: "",
-        email: "",
-        subject: "",
-        message: "",})
 
-    const InputEvent = (event) => {
-        const { name, value } = event.target
+    const form = useRef();
 
-        setData((preVal) => {
-        return {
-            ...preVal,
-            [name]: value,
-        }
-        })
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    const formSubmit = (event) => {
-    event.preventDefault()
-    alert(
-        `My name is ${data.fullname}. 
-        My phone number is ${data.phone}. 
-        My email address is ${data.email}. 
-        My Subject on  ${data.subject}. 
-        Here is my message I want to say : ${data.message}. 
-        `
-        )
-    }
+        emailjs.sendForm('service_w6svlhk', 'template_xzkrtc7', form.current, 'q_62p3f56iW_fG_dP')
+        .then((result) => {
+            console.log(result.text);
+            e.target.reset();
+            toast.success('Message send Successfully.');
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     return (
         <>
         <section className='Contact' id='contact'>
@@ -44,53 +33,53 @@ const Contact = () => {
             <div className='content d_flex'>
                 <div className='left'>
                 <div className='box box_shodow'>
-                    <div className='img'>
-                    <img src={contact1} alt='' />
+                    <div className='contact-img'>
+                        <img src={contact1} alt='' />
                     </div>
                     <div className='details'>
-                    <h1>Md. Fazaly Rabbi</h1>
-                    <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                    <p>Phone: (+88)01684-743547</p>
-                    <p>Email: fazalyrabbi614@gmail.com</p> <br />
-                    <span>FIND WITH ME</span>
-                    <div className='button f_flex'>
-                        <button className='btn_shadow' onClick={() => window.open('https://www.facebook.com/Kasem3D/', '_blank')}>
-                            <i class="lni lni-facebook-filled"></i>
-                        </button>
-                        <button className='btn_shadow' onClick={() => window.open('https://www.linkedin.com/in/md-fazaly-rabbi-34b36b151/', '_blank')}>
-                            <i class="lni lni-linkedin-original"></i>
-                        </button>
-                        <button className='btn_shadow' onClick={() => window.open('https://github.com/fazaly', '_blank')}>
-                            <i class="lni lni-github-original"></i>
-                        </button>
-                    </div>
+                        <h1>Md. Fazaly Rabbi</h1>
+                        <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
+                        <p>Phone: (+88)01684-743547</p>
+                        <p>Email: fazalyrabbi614@gmail.com</p> <br />
+                        <span>FIND WITH ME</span>
+                        <div className='button f_flex'>
+                            <button className='btn_shadow' onClick={() => window.open('https://www.facebook.com/Kasem3D/', '_blank')}>
+                                <i className="lni lni-facebook-filled"></i>
+                            </button>
+                            <button className='btn_shadow' onClick={() => window.open('https://www.linkedin.com/in/md-fazaly-rabbi-34b36b151/', '_blank')}>
+                                <i className="lni lni-linkedin-original"></i>
+                            </button>
+                            <button className='btn_shadow' onClick={() => window.open('https://github.com/fazaly', '_blank')}>
+                                <i className="lni lni-github-original"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 </div>
 
                 <div className='right box_shodow'>
-                <form onSubmit={formSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <div className='f_flex'>
                     <div className='input row'>
                         <span>YOUR NAME</span>
-                        <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
+                        <input type='text' name='user_name' />
                     </div>
                     <div className='input row'>
                         <span>PHONE NUMBER </span>
-                        <input type='number' name='phone' value={data.phone} onChange={InputEvent} />
+                        <input type='number' name='phone' />
                     </div>
                     </div>
                     <div className='input'>
                     <span>EMAIL </span>
-                    <input type='email' name='email' value={data.email} onChange={InputEvent} />
+                    <input type='email' name='user_email'/>
                     </div>
                     <div className='input'>
                     <span>SUBJECT </span>
-                    <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
+                    <input type='text' name='subject'/>
                     </div>
                     <div className='input'>
                     <span>YOUR MESSAGE </span>
-                    <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
+                    <textarea cols='30' rows='10' name='message'></textarea>
                     </div>
                     <button className='btn_shadow'>
                     SEND MESSAGE <i className='fa fa-long-arrow-right'></i>

@@ -27,28 +27,28 @@ const Home = () => {
                         <h4>FIND WITH ME</h4>
                         <div className='button'>
                         <button className='btn_shadow' onClick={() => window.open('https://www.facebook.com/Kasem3D/', '_blank')}>
-                            <i class="lni lni-facebook-filled"></i>
+                            <i className="lni lni-facebook-filled"></i>
                         </button>
                         <button className='btn_shadow' onClick={() => window.open('https://www.linkedin.com/in/md-fazaly-rabbi-34b36b151/', '_blank')}>
-                            <i class="lni lni-linkedin-original"></i>
+                            <i className="lni lni-linkedin-original"></i>
                         </button>
                         <button className='btn_shadow' onClick={() => window.open('https://github.com/fazaly', '_blank')}>
-                            <i class="lni lni-github-original"></i>
+                            <i className="lni lni-github-original"></i>
                         </button>
                         </div>
                     </div>
                     <div className='col_1'>
                         <h4>BEST SKILL ON</h4>
                         <button className='btn_shadow'>
-                            <i class="lni lni-javascript"></i>
+                            <i className="lni lni-javascript"></i>
                             <h5 className="skill-title">JavaScript</h5>
                         </button>
                         <button className='btn_shadow'>
-                            <i class="lni lni-react"></i>
+                            <i className="lni lni-react"></i>
                             <h5 className="skill-title">React JS</h5>
                         </button>
                         <button className='btn_shadow'>
-                            <i class="lni lni-nodejs"></i>
+                            <i className="lni lni-nodejs"></i>
                             <h5 className="skill-title">Node JS</h5>
                         </button>
                     </div>

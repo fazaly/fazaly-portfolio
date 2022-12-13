@@ -7,6 +7,14 @@
     padding: 35px;
     margin: 20px;
 }
+.img{
+    text-align: center;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 .Testimonial .right {
     width: 65%;
     padding: 0 0 0 50px;
@@ -79,9 +87,10 @@ article.nextSlide {
     }
     .Testimonial .left img {
     width: 190px;
-    border-radius: 10px;
+    border-radius: 95px;
     margin-right: 20px;
     }
+    
     .Testimonial .right {
     width: 100%;
     margin: 0;

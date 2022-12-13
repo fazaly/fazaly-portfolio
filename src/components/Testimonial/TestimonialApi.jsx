@@ -1,7 +1,7 @@
 const TestimonialApi = [
     {
         id: 1,
-        image: "./image/slide1.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CQ3IrjZcisW-FO12jxRtSA9shZYuykqA2w&usqp=CAU",
         design: "NCD - DESIGN",
         name: "Mevine Thoda",
         offcer: "Marketing Officer",
@@ -11,7 +11,7 @@ const TestimonialApi = [
         },
         {
         id: 2,
-        image: "./image/slide2.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RquzAbcQRt-0YFfQnlycX8I61ufOPccCIg&usqp=CAU",
         design: "Default name",
         name: "Davei Luace",
         offcer: "Chief Operating Manager",
@@ -21,7 +21,7 @@ const TestimonialApi = [
         },
         {
         id: 3,
-        image: "./image/slide3.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHAKWHhA6UuX-UPdizhi5K4IsByBpEJMX8Q&usqp=CAU",
         design: "Rainbow-Themes",
         name: "Nevine Acotanza",
         offcer: "Chief Operating Officer",
@@ -31,7 +31,7 @@ const TestimonialApi = [
         },
         {
         id: 4,
-        image: "./image/slide4.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4XSv8zvv1XvIvvz8PFg8hRwUTQJjbis-CJg&usqp=CAU",
         design: "Bound - Trolola",
         name: "Jone Duone Joe",
         offcer: "Operating Officer",
@@ -41,7 +41,7 @@ const TestimonialApi = [
         },
         {
         id: 5,
-        image: "./image/slide5.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg4h1B8CMfadXgfKeNcNleBEARIvHzdnjZRw&usqp=CAU",
         design: "Glassfisom",
         name: "Nevine Dhawan",
         offcer: "CEO Of Officer",

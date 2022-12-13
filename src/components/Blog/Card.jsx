@@ -27,7 +27,7 @@ const Card = (props) => {
             <div className='title'>
             <h2 onClick={toggleModal}>{props.title_one}</h2>
             <a href='#popup' className='arrow' onClick={toggleModal}>
-                <i class='fas fa-arrow-right'></i>
+                <i className='fas fa-arrow-right'></i>
             </a>
             </div>
         </div>
@@ -52,7 +52,7 @@ const Card = (props) => {
                 <p>{props.desc_three}</p>
 
                 <button className='close-modal btn_shadow' onClick={toggleModal}>
-                    <i class='fas fa-times'></i>
+                    <i className='fas fa-times'></i>
                 </button>
 
                 {/*---------Leave Message----------  */}

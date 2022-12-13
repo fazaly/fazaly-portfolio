@@ -7,6 +7,14 @@
 .Contact .box {
     padding: 30px;
 }
+.contact-img{
+    text-align: center;
+}
+.contact-img img{
+    width: 400px;
+    /* padding-right: 30px; */
+    border-radius: 15px;
+}
 .Contact .details h1 {
     margin: 20px 0 20px 0;
     font-size: 35px;

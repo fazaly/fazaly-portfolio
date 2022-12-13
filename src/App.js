@@ -9,6 +9,7 @@ import Blog from "./components/Blog/Blog.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Blog />
       <Contact />
       <Footer />
+      <Toaster/>
     </>
   )
 }

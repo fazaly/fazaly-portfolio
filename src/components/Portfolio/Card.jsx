@@ -28,7 +28,7 @@ const Card = (props) => {
             <div className='title'>
             <h2 onClick={toggleModal}>{props.title}</h2>
             <a href='#popup' className='arrow' onClick={toggleModal}>
-                <i class='fas fa-arrow-right'></i>
+                <i className='fas fa-arrow-right'></i>
             </a>
             </div>
         </div>
@@ -48,16 +48,16 @@ const Card = (props) => {
                 <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
                 <div className='button f_flex mtop'>
                     <button className='btn_shadow' onClick={() => window.open(codeClient, '_blank')}>
-                    Code Client <i class="fa-brands fa-github"></i>
+                    Code Client <i className="fa-brands fa-github"></i>
                     </button>
                     <button className='btn_shadow' onClick={() => window.open(codeServer, '_blank')}>
-                    Code Server <i class="fa-brands fa-github"></i>
+                    Code Server <i className="fa-brands fa-github"></i>
                     </button>
-                    <button className="btn_shadow" onClick={() => window.open(liveLink, '_blank')}>Live Site <i class="fa-solid fa-arrow-right-long"></i>
+                    <button className="btn_shadow" onClick={() => window.open(liveLink, '_blank')}>Live Site <i className="fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
                 <button className='close-modal btn_shadow' onClick={toggleModal}>
-                    <i class='fas fa-times'></i>
+                    <i className='fas fa-times'></i>
                 </button>
                 </div>
             </div>
